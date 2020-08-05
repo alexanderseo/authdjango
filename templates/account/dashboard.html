@@ -1,0 +1,10 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Авторизованная страница{% endblock %}
+
+{% block content %}
+    <h1>Авторизованная страница</h1>
+    <p>Вы попали на авторизованную страницу</p>
+    Вы можете <a href="{% url "edit" %}">изменить ваш профиль</a> или
+    <a href="{% url "password_change" %}">сменить пароль</a>.
+{% endblock %}
